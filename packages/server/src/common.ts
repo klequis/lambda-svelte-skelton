@@ -16,7 +16,7 @@ export function createResponse(statusCode: number, body: string | object): APIGa
 }
 
 export const exampleHandler: APIGatewayProxyHandler = async () => {
-	return createResponse(200, { success: true })
+	return crepnateResponse(200, { success: true })
 }
 // eslint-disable-next-line @typescript-eslint/require-await
 export const localCorsHandler: APIGatewayProxyHandler = async () => {
